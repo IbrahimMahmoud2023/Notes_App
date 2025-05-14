@@ -11,7 +11,11 @@ class NotesApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-
+      appBar: AppBar(
+        title: Text('Welcome Ibrahim'),
+        centerTitle: true,
+        backgroundColor: Colors.deepPurpleAccent,
+      ),
       ),
     );
   }
