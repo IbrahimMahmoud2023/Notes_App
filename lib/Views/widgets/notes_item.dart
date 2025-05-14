@@ -21,7 +21,7 @@ class NotesItem extends StatelessWidget {
             subtitle: Padding(
               padding: const EdgeInsets.only(top: 16
               ,bottom: 16),
-              child: Text('build your career with ibrahim mahmoud',style: TextStyle(color: Colors.black.withOpacity(0.5),fontSize: 18),),
+              child: Text('build your career with ibrahim mahmoud',style: TextStyle(color: Colors.black.withOpacity(0.5),fontSize: 16),),
             ),
             trailing: IconButton(onPressed: (){}, icon: Icon(FontAwesomeIcons.trash,color: Colors.black,size: 24,),)
           ),
