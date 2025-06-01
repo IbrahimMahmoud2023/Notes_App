@@ -30,6 +30,16 @@ class _EditNoteViewBodyState extends State<EditNoteViewBody> {
               widget.note.save();
               BlocProvider.of<NotesCubit>(context).fetchAllNotes();
               Navigator.pop(context);
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15)
+                  ),
+                  content: Text('ُNote Edit Successfully'),
+                  backgroundColor: Colors.green,
+                  duration: Duration(seconds: 3),
+                ),
+              );
             },
             text: 'Edit Note',
             icon: Icons.check,

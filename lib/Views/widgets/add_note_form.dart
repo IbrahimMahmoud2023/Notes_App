@@ -52,6 +52,16 @@ class _AddNoteFormState extends State<AddNoteForm> {
                 onTap: () {
                   if (formKey.currentState!.validate()) {
                     formKey.currentState!.save();
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15)
+                        ),
+                        content: Text('Note Added Successfully'),
+                        backgroundColor: Colors.green,
+                        duration: Duration(seconds: 3),
+                      ),
+                    );
                     DateTime currentDate = DateTime.now();
                     String formattedDate = DateFormat(
                       'dd-MM-yyyy',
